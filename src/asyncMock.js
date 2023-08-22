@@ -29,10 +29,10 @@ export const getProducts = () => {
     })
 }
 
-export const productById = (productId) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(products.find(prod => prod.id === productId))
-        }, 500)
-    })
-}
+// export const productById = (productId) => {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(products.find(prod => prod.id === productId))
+//         }, 500)
+//     })
+// }
