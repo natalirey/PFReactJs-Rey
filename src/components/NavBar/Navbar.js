@@ -1,14 +1,15 @@
+import { Link , NavLink} from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import logo from "../CartWidget/assets/logo.jpg";
 
 function Navbar() {
     return (
         <>
-        <img className="w-44" src={logo} alt="logo"/>
+        <Link to="/"> <img className="w-44" src={logo} alt="logo"/></Link>
         <nav className="space-x-10">
-            <a href="#">Ver todo</a>
-            <a href="#">Nike / Jordan</a>
-            <a href="#">Adidas</a>
+            <NavLink to="/nike">Nike</NavLink>
+            <NavLink to="/jordan">Air Jordan</NavLink>
+            <NavLink to="/adidas">Adidas</NavLink>
         </nav>
         <CartWidget />
         </>

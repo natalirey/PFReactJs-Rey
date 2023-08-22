@@ -1,4 +1,10 @@
 .CardItem{
     width: 20%;
-    background-color: aqua;
+}
+
+.btnVerDetalle{
+    background-color: #ad9217;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
 }
