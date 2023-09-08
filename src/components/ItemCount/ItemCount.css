@@ -1,8 +1,6 @@
 .Counter {
-    width: 20%;
-    background-color: #8a2aca;
-    margin: 10px;
     padding: 5px;
-    justify-content: center;
+    width: 60%;
     text-align: center;
+    margin: 0 auto;
 }

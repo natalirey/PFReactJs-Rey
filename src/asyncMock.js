@@ -6,7 +6,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/n/dn3706-401-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 800.0,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+  descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -16,7 +16,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/h/dh6927-140-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900.0,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -26,7 +26,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/c/k/ck9246-136-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900.0,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -36,7 +36,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/x/dx4332-800_phsrh000-1000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 800.0,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -46,7 +46,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/n/dn3739-060-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900.0,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -56,7 +56,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/q/dq8396-600-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 800,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -66,7 +66,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/q/dq8417-006-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 800,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -76,7 +76,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/q/dq8397-500-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -86,7 +86,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/a/v/av2187-001-phsrh000-1000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -96,7 +96,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/9/1/919712-102-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -106,7 +106,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/c/z/cz0775-001-frontf1-001.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -116,7 +116,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/q/dq8426-301_phsrh000-1000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900,
     marca: "Air Jordan",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -126,7 +126,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/v/dv6993-200-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 900,
     marca: "Nike",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -136,7 +136,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/v/dv3054-001-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 600,
     marca: "Nike",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -146,7 +146,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/v/dv1694-900-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 600,
     marca: "Nike",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -156,7 +156,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/d/v/dv4024-002-phsrh000-2000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 600,
     marca: "Nike",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -166,7 +166,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/g/x/gx4119-1-footwear-photography-side_lateral_center_view-transparent.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 700,
     marca: "Adidas",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -176,7 +176,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/f/y/fy7756_slc_ecom.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 700,
     marca: "Adidas",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -186,7 +186,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/h/q/hq6807_1_footwear_photography_side_lateral_center_view_transparent_1.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 700,
     marca: "Adidas",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
   {
@@ -196,7 +196,7 @@ const products = [
       "https://www.kicks.com.co/media/catalog/product/g/y/gy6818-1-footwear-photography-side_lateral_center_view-transparent.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg",
     precio: 700,
     marca: "Adidas",
-    descripcion: "blablabla",
+    descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
     stock: "50",
   },
 ];
@@ -209,18 +209,18 @@ export const getProducts = () => {
   });
 };
 
-export const productById = (productId) => {
+export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.id === productId))
+            resolve(products.find(prod => prod.id === parseInt(productId)))
         }, 500)
     })
 }
 
-// export const getProductsByCategory = (categoriaId) => {
-//   return new Promise((resolve) => {
-//       setTimeout(() => {
-//           resolve(products.find(prod => prod.marca === categoriaId))
-//       }, 500)
-//   })
-// }
+export const getProductsByCategory = (categoryId) => {
+  return new Promise((resolve) => {
+      setTimeout(() => {
+          resolve(products.find(prod => prod.marca === categoryId))
+      }, 500)
+  })
+}

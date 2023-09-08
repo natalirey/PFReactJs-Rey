@@ -1,0 +1,20 @@
+.CardItem2{
+justify-content: center;
+justify-items: center;
+width: 100%;
+gap: 30px;
+
+
+}
+.CardInfo{
+    width: 30%;
+    margin-top: 50px;
+    text-align: start;
+}
+.CardInfo h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+.ItemImg2{
+    width: 35%;
+}

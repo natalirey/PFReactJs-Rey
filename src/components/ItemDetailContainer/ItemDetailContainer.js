@@ -1,6 +1,6 @@
 import './ItemDetailContainer.css'
 import { useEffect, useState } from "react"
-import { productById } from "../../asyncMock"
+import { getProductById } from "../../asyncMock"
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
     const { itemId } = useParams()
 
     useEffect(() => {
-        productById(itemId)
+        getProductById(itemId)
         .then(response => {
             setProduct(response)
         })
