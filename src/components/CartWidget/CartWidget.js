@@ -8,7 +8,7 @@ const CartWidget = () => {
   const valueContext = useContext (context)
 
   return (
-    <NavLink  className="flex gap-2" to="/carrito">
+    <NavLink  className="flex gap-2" to="/cart">
       <img className="w-7" src={cart} alt="cart-widget" />
       <span>{valueContext.cantidadTotal}</span>
     </NavLink>

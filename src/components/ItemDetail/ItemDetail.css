@@ -9,7 +9,7 @@ gap: 30px;
 .CardInfo{
     width: 30%;
     margin-top: 50px;
-    text-align: start;
+    /* text-align: start; */
 }
 .CardInfo h1{
     font-size: 22px;
@@ -18,3 +18,5 @@ gap: 30px;
 .ItemImg2{
     width: 35%;
 }
+
+

@@ -8,7 +8,7 @@ const products = [
     marca: "Air Jordan",
     category: "jordan",
     descripcion: "Una colección que fusiona la herencia urbana con la modernidad. Cada diseño captura la esencia de la moda deportiva, conectando el pasado con el futuro.",
-    stock: "50",
+    stock: "0",
   },
   {
     id: 2,

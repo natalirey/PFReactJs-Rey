@@ -1,13 +1,21 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
 const ItemDetail = ({nombre, imagen, descripcion, precio, marca, stock}) =>{
+    const [value, setValue] = useState(0)
+
+    const handleOnAdd = (quantity) => {
+        setValue(quantity)
+    }
+
     return (
         <article className="CardItem2 flex">
             <img src={imagen} alt={nombre} className="ItemImg2" />
-            <section className='CardInfo items-start'>
+            <section className='CardInfo'>
                 <h1>{nombre}</h1>
                 <p>{marca}</p>
                 <br />
@@ -16,7 +24,12 @@ const ItemDetail = ({nombre, imagen, descripcion, precio, marca, stock}) =>{
                 <br />
                 <br />
                 <p className='font-bold'>U$D: {precio}</p>
-                <ItemCount initial={1} stock={stock} onAdd= {(quantity) => console.log('cantidad agregada ')}/>
+                {value > 0 ? (
+                    <Link to='/cart' className='btnVerDetalle'>Ir al carrito</Link>
+                ):(
+                    <ItemCount initial={1} stock={stock} onAdd= {handleOnAdd}/>
+                )
+                }
             </section>
         </article>
     )

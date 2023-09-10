@@ -18,7 +18,7 @@ ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   return (
-    <div className="Counter ">
+    <div className="Counter">
       <div className="Controls flex justify-center gap-5">
         <button className="Button" onClick={decrement}>
           -
@@ -40,3 +40,4 @@ ItemCount = ({ stock, initial, onAdd }) => {
 };
 
 export default ItemCount;
+

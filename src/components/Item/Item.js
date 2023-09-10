@@ -5,7 +5,7 @@ const Item = ({ id, nombre, imagen, precio}) => {
   return (
     <article className="CardItem">
       <picture>
-        <img src={imagen} alt={nombre} className="ItemImg" />
+        <img src={imagen} alt={nombre} className="ItemImg " />
       </picture>
       <section>
         <h2 className="ItemHeader text-center">{nombre}</h2>
