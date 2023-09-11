@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProducts , getProductsByCategory } from "../../asyncMock";
+// import { getProducts , getProductsByCategory } from "../../asyncMock";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { db } from "../db/Firebase";
@@ -60,7 +60,11 @@ const ItemListContainer = ({}) => {
 
   return (
     <div>
-      <ItemList products={products}/>
+      {loading ? (
+        <p className="text-center m-5">Cargando...</p>
+      ) : (
+        <ItemList products={products} />
+      )}
     </div>
   );
 };
