@@ -14,10 +14,7 @@ const ItemListContainer = ({}) => {
 
   useEffect(() => {
     setLoading (true)
-
-    // const productsCollection = collection(db, "products")
-
-    // const laConsulta = getDocs(productsCollection)
+    
     const collectionCategory = categoryId
     ? query (collection (db,'products'), where ('category' , '==' , categoryId))
     : collection (db, 'products')
