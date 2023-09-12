@@ -2,17 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import NotFoundImage from './components/CartWidget/assets/notFound.jpg'; // Reemplaza "nombre_de_tu_imagen.png" con el nombre de tu imagen
-
+import NotFoundImage from './components/CartWidget/assets/notFound.jpg';
 import Footer from "./Footer";
-import MyCustomProvider from "./components/Context/MyContext";
+import  { CartProvider }  from "./components/Context/MyContext";
 import Cart from "./components/Cart/Cart";
-import "./components/db/migrations"
+
 
 function App() {
   return (
     <BrowserRouter>
-    <MyCustomProvider>
+    <CartProvider>
       <header className="flex justify-between content-center items-center mx-5 p-5 me-10">
         <Navbar/>
       </header>
@@ -28,7 +27,7 @@ function App() {
         </Routes>
       </main>
       <Footer/>
-      </MyCustomProvider>
+      </CartProvider>
     </BrowserRouter>
   );
 }

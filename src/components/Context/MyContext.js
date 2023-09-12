@@ -1,21 +1,65 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-export const context = createContext()
-const Provider = context.Provider
+export const ContextCart = createContext({cart: []})
 
-const MyCustomProvider = (props) => {
+export const CartProvider =({ children }) => {
+    const [cart, setCart] = useState([])
 
-    const valueContext = {
-        carrito : [],
-        montoTotal : 0,
-        cantidadTotal : 5,
+    console.log (cart)
+
+    const addProduct = (item,quantity) => {
+        if(!isInCart(item.id)) {
+            setCart(prev => [...prev,{...item, quantity}])
+        } else {
+            console.error ('el producto ya fue agregado')
+        }
+    }
+
+    const removeProduct = (itemId) =>{
+        const cartUpdated = cart.filter(prod => prod.id !== itemId)
+        setCart (cartUpdated)
+    }
+
+    const clearCart = () => {
+        setCart([])
+    }
+
+    const totalQuantity = () => {
+        return cart.reduce((acc, prod) => acc + prod.quantity, 0);
+    }
+
+    const isInCart = (itemId) => {
+        return  cart.some (prod => prod.id === itemId)
+    }
+
+    const total = () => {
+        return cart.reduce((acc, prod) => acc + prod.quantity * prod.precio, 0)
     }
 
     return (
-        <Provider value={valueContext}>
-            {props.children}
-        </Provider>
+        <ContextCart.Provider value ={{ cart, addProduct, removeProduct, clearCart, total, totalQuantity}}>
+            { children }
+        </ContextCart.Provider>
     )
 }
 
-export default MyCustomProvider;
+
+// export const context = createContext()
+// const Provider = context.Provider
+
+// const MyCustomProvider = (props) => {
+
+//     const valueContext = {
+//         carrito : [],
+//         montoTotal : 0,
+//         cantidadTotal : 5,
+//     }
+
+//     return (
+//         <Provider value={valueContext}>
+//             {props.children}
+//         </Provider>
+//     )
+// }
+
+// export default MyCustomProvider;
