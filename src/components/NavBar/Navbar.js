@@ -5,6 +5,7 @@ import logo from "../CartWidget/assets/logo.jpg";
 function Navbar() {
   const location = useLocation();
   const isCartPage = location.pathname === "/cart";
+  const isCheckoutPage = location.pathname === "/checkout";
 
   return (
     <>
@@ -12,7 +13,7 @@ function Navbar() {
         <img className="w-52" src={logo} alt="logo" />
       </Link>
       <div className="space-x-10">
-        {!isCartPage && (
+        {!isCartPage && !isCheckoutPage && (
           <>
             <NavLink to={`/category/nike`} className={({ isActive }) => isActive ? 'ActiveOption' : 'option'}>Nike</NavLink>
             <NavLink to={`/category/jordan`} className={({ isActive }) => isActive ? 'ActiveOption' : 'option'}>Air Jordan</NavLink>
@@ -20,10 +21,11 @@ function Navbar() {
           </>
         )}
       </div>
-      <CartWidget />
+      {!isCheckoutPage && <CartWidget />}
     </>
   );
 }
 
 export default Navbar;
+
 

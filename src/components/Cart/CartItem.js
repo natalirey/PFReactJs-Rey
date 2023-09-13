@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ContextCart } from "../Context/MyContext";
 
-const CartItem = ({ id, nombre, imagen, precio, quantity }) => {
+const CartItem = ({ id, nombre, precio, quantity }) => {
   const { removeProduct } = useContext(ContextCart);
 
   return (
@@ -15,8 +15,7 @@ const CartItem = ({ id, nombre, imagen, precio, quantity }) => {
             removeProduct(id);
           }}
           className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
-        >
-          X
+        >X
         </button>
       </td>
     </tr>

@@ -54,7 +54,7 @@ const Cart = () => {
           </section>
           <div className="text-center">
             <h3 className="m-5 p-4 bg-gray-200 shadow-md rounded-lg w-48 text-center mx-auto ">Total: U$D {total()}</h3>
-            <Link to="/checkout" className="btnVerDetalle">Terminar compra</Link>
+            <Link to="/checkout" className="btnVerDetalle">Realizar pedido</Link>
           </div>
         </div>
     );

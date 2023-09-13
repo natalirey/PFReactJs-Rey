@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-// import { getProducts , getProductsByCategory } from "../../asyncMock";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { db } from "../db/Firebase";
 import { getDocs , collection , query , where} from "firebase/firestore";
+import Loader from "../Loader/Loader";
 
 
-const ItemListContainer = ({}) => {
+const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState (true)
 
@@ -35,31 +35,11 @@ const ItemListContainer = ({}) => {
     })
   }, [categoryId]);
 
-//     const asyncFunc = categoryId ? getProductsByCategory : getProducts
-
-//     asyncFunc(categoryId)
-//     .then (response => {
-//       setProducts(response)
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//     });
-// }, [categoryId]);
-
-
-  //   getProducts()
-  //     .then((response) => {
-  //       setProducts(response);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // }, []);
 
   return (
     <div>
       {loading ? (
-        <p className="text-center m-5">Cargando...</p>
+        <Loader/>
       ) : (
         <ItemList products={products} />
       )}

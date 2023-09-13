@@ -1,50 +1,45 @@
-import './ItemDetailContainer.css'
-import { useEffect, useState } from "react"
-// import { getProductById } from "../../asyncMock"
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { useParams } from 'react-router-dom'
-import { getDoc, doc } from 'firebase/firestore'
-import { db } from '../db/Firebase'
+import './ItemDetailContainer.css';
+import { useEffect, useState } from 'react';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
+import { getDoc, doc } from 'firebase/firestore';
+import { db } from '../db/Firebase';
+import Loader from '../Loader/Loader'; 
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null)
-    const [loading, setLoading] = useState(true)
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    const { itemId } = useParams()
+  const { itemId } = useParams();
 
-    useEffect(() => {
-        setLoading(true)
+  useEffect(() => {
+    setLoading(true);
 
-        const itemDoc = doc (db, 'products', itemId)
+    const itemDoc = doc(db, 'products', itemId);
 
-        getDoc (itemDoc)
-        .then (response => { 
-            const data = response.data()
-            const productCollection = { id: response.id, ...data }
-            setProduct(productCollection)
-        })
-            .catch(error => {
-                console.log(error)
-            })
-            .finally(() =>{
-                setLoading(false)
-            })
-        },[itemId])
+    getDoc(itemDoc)
+      .then((response) => {
+        const data = response.data();
+        const productCollection = { id: response.id, ...data };
+        setProduct(productCollection);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [itemId]);
 
-    //     getProductById(itemId)
-    //     .then(response => {
-    //         setProduct(response)
-    //     })
-    //     .catch(error => {
-    //         console.error(error)
-    //     })
-    // },[itemId])
+  return (
+    <div className="ItemDetailContainer">
+      {loading ? (
+        <Loader /> 
+      ) : (
+        <ItemDetail {...product} />
+      )}
+    </div>
+  );
+};
 
-    return(
-        <div className="ItemDetailContainer">
-            <ItemDetail {...product}/>
-        </div>
-    )
-}
-
-export default ItemDetailContainer
+export default ItemDetailContainer;
