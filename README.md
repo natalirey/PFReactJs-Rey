@@ -3,7 +3,7 @@ Esta tienda en línea está diseñada para brindar la mejor experiencia de compr
 
 Trabajamos a pedido, ya que muchos de nuestros modelos son verdaderamente únicos y difíciles de conseguir en otros lugares. Cuando los clientes deciden realizar una compra, el proceso es sencillo: su orden se envía automáticamente a nuestro equipo, que se encargará de contactarlos para finalizar los detalles de pago y envío, asegurando una experiencia de compra sin complicaciones.</p>
 
-[Ver mi video](https://clipchamp.com/watch/eA7Lh1r9477)
+[Explorá el sitio](https://clipchamp.com/watch/eA7Lh1r9477)
 
 
 ## Stack Tecnológico: 
@@ -27,7 +27,7 @@ Además, también aprovechamos herramientas como Visual Studio Code como entorno
 
 Aquí puedes ver el loader que utilizamos en la tienda:
 
-![Loader](https://cssloaders.github.io/)
+![Loader](https://github.com/vineethtrv/css-loader)
 
 Este loader es utilizado para mostrar visualmente que la aplicación está realizando una tarea en segundo plano.
 
