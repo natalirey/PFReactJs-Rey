@@ -1,4 +1,3 @@
-import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -21,10 +20,10 @@ const ItemDetail = ({id, nombre, imagen, descripcion, precio, marca, stock}) =>{
     }
 
     return (
-        <article className="CardItem2 flex">
-            <img src={imagen} alt={nombre} className="ItemImg2" />
-            <section className='CardInfo'>
-                <h1 className='font-bold'>{nombre}</h1>
+        <article className="flex justify-center items-center w-full gap-30">
+            <img src={imagen} alt={nombre} className="w-35" />
+            <section className='w-30 mt-50'>
+                <h1 className='font-bold text-xl'>{nombre}</h1>
                 <p>{marca}</p>
                 <br />
                 <br />

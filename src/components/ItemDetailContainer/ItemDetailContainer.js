@@ -1,4 +1,3 @@
-import './ItemDetailContainer.css';
 import { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
@@ -32,7 +31,7 @@ const ItemDetailContainer = () => {
   }, [itemId]);
 
   return (
-    <div className="ItemDetailContainer">
+    <div className="p-5 flex justify-center">
       {loading ? (
         <Loader /> 
       ) : (
