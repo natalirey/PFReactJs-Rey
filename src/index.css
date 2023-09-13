@@ -20,7 +20,7 @@
     border: 2px solid;
     border-color: #ad9217;
     position: relative;
-    }
+}
 
 .btnVerDetalle:hover {
     color: rgb(14, 13, 13);
@@ -28,4 +28,3 @@
     transition: all 0.2s ease;
     background: #c2a31b;
 }
-

@@ -3,7 +3,7 @@ import { ContextCart } from "../Context/MyContext";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { db } from "../db/Firebase";
 import CheckoutForm from "./CheckoutForm";
-import Loader from '../Loader/Loader'; 
+import Loader from "../Loader/Loader";
 
 const Checkout = () => {
   const [loading, setLoading] = useState(false);
@@ -39,15 +39,17 @@ const Checkout = () => {
   };
 
   if (loading) {
-    return <Loader />; 
+    return <Loader />;
   }
 
   if (saleId) {
-    return (<div className="text-center mb-50">
+    return (
+      <div className="text-center mb-50">
         <h1>¡Gracias por su compra! :)</h1>
         <br />
         <h1>Código de orden: {saleId}</h1>
-    </div>);
+      </div>
+    );
   }
 
   return (
@@ -58,5 +60,3 @@ const Checkout = () => {
 };
 
 export default Checkout;
-
-

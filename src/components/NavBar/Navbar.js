@@ -15,9 +15,30 @@ function Navbar() {
       <div className="space-x-10">
         {!isCartPage && !isCheckoutPage && (
           <>
-            <NavLink to={`/category/nike`} className={({ isActive }) => isActive ? 'ActiveOption' : 'option'}>Nike</NavLink>
-            <NavLink to={`/category/jordan`} className={({ isActive }) => isActive ? 'ActiveOption' : 'option'}>Air Jordan</NavLink>
-            <NavLink to={`/category/adidas`} className={({ isActive }) => isActive ? 'ActiveOption' : 'option'}>Adidas</NavLink>
+            <NavLink
+              to={`/category/nike`}
+              className={({ isActive }) =>
+                isActive ? "ActiveOption" : "option"
+              }
+            >
+              Nike
+            </NavLink>
+            <NavLink
+              to={`/category/jordan`}
+              className={({ isActive }) =>
+                isActive ? "ActiveOption" : "option"
+              }
+            >
+              Air Jordan
+            </NavLink>
+            <NavLink
+              to={`/category/adidas`}
+              className={({ isActive }) =>
+                isActive ? "ActiveOption" : "option"
+              }
+            >
+              Adidas
+            </NavLink>
           </>
         )}
       </div>
@@ -27,5 +48,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

@@ -15,7 +15,8 @@ const CartItem = ({ id, nombre, precio, quantity }) => {
             removeProduct(id);
           }}
           className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
-        >X
+        >
+          X
         </button>
       </td>
     </tr>
@@ -23,5 +24,3 @@ const CartItem = ({ id, nombre, precio, quantity }) => {
 };
 
 export default CartItem;
-
-

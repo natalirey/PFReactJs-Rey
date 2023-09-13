@@ -1,4 +1,4 @@
-SneakerHeads
+## SneakerHeads
 Esta tienda en línea está diseñada para brindar la mejor experiencia de compra a los apasionados de las zapatillas, conocidos como 'SneakerHeads'. Nuestro catálogo presenta una selección de zapatillas de alta demanda y exclusividad. Al ingresar a la tienda, los usuarios pueden explorar y filtrar fácilmente las opciones según su marca favorita.
 
 Trabajamos a pedido, ya que muchos de nuestros modelos son verdaderamente únicos y difíciles de conseguir en otros lugares. Cuando los clientes deciden realizar una compra, el proceso es sencillo: su orden se envía automáticamente a nuestro equipo, que se encargará de contactarlos para finalizar los detalles de pago y envío, asegurando una experiencia de compra sin complicaciones.</p>
