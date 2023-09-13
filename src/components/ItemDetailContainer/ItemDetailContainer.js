@@ -31,7 +31,7 @@ const ItemDetailContainer = () => {
   }, [itemId]);
 
   return (
-    <div className="p-5 flex justify-center">
+    <div className="flex justify-center">
       {loading ? <Loader /> : <ItemDetail {...product} />}
     </div>
   );

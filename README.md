@@ -3,22 +3,23 @@ Esta tienda en línea está diseñada para brindar la mejor experiencia de compr
 
 Trabajamos a pedido, ya que muchos de nuestros modelos son verdaderamente únicos y difíciles de conseguir en otros lugares. Cuando los clientes deciden realizar una compra, el proceso es sencillo: su orden se envía automáticamente a nuestro equipo, que se encargará de contactarlos para finalizar los detalles de pago y envío, asegurando una experiencia de compra sin complicaciones.</p>
 
-## GRABACIÓN DE PANTALLA DE LA WEB.
+[Ver mi video](https://clipchamp.com/watch/eA7Lh1r9477)
+
 
 ## Stack Tecnológico: 
 Este proyecto fue construido utilizando las siguientes tecnologías y herramientas:
 
-- **Node.js**: Un entorno de tiempo de ejecución de JavaScript que nos permite ejecutar código JavaScript en el lado del servidor y gestionar las dependencias del proyecto con npm (Node Package Manager).
+- **Node.js v.18.15.0** : Un entorno de tiempo de ejecución de JavaScript que nos permite ejecutar código JavaScript en el lado del servidor y gestionar las dependencias del proyecto con npm (Node Package Manager v.9.8.1).
 
-- **React.js**: Utilizamos React como la biblioteca principal para crear una interfaz de usuario dinámica y atractiva.
+- **React.js v.18.2.0**: Utilizamos React como la biblioteca principal para crear una interfaz de usuario dinámica y atractiva.
 
-- **Firebase**: Firebase se empleó para gestionar la base de datos en tiempo real, la autenticación de usuarios y el alojamiento web.
+- **Firebase v.10.3.1**: Firebase se empleó para gestionar la base de datos en tiempo real, la autenticación de usuarios y el alojamiento web.
 
-- **Tailwind CSS**: Utilizamos Tailwind CSS como framework de diseño para un estilo atractivo y una experiencia de usuario receptiva.
+- **Tailwind CSS v.3.3.3**: Utilizamos Tailwind CSS como framework de diseño para un estilo atractivo y una experiencia de usuario receptiva.
 
-- **React Router**: Implementamos React Router para la navegación entre páginas y la creación de rutas en la aplicación de una sola página (SPA).
+- **React Router v.6.15.0**: Implementamos React Router para la navegación entre páginas y la creación de rutas en la aplicación de una sola página (SPA).
 
-- **Context API**: Utilizamos el Context API de React para gestionar el estado global de la aplicación y compartir datos importantes entre componentes.
+- **Context API v.18.2.0**: Utilizamos el Context API de React para gestionar el estado global de la aplicación y compartir datos importantes entre componentes.
 
 Además, también aprovechamos herramientas como Visual Studio Code como entorno de desarrollo y Git/GitHub para el control de versiones.
 
@@ -26,7 +27,7 @@ Además, también aprovechamos herramientas como Visual Studio Code como entorno
 
 Aquí puedes ver el loader que utilizamos en la tienda:
 
-![Loader](/path/to/your/loader.svg)
+![Loader](https://cssloaders.github.io/)
 
 Este loader es utilizado para mostrar visualmente que la aplicación está realizando una tarea en segundo plano.
 
@@ -54,7 +55,7 @@ Este proyecto fue realizado como parte del curso de React JS de Coderhouse. Agra
 
 ## Instructor del curso
 
-- Horacio Alfredo Gutierrez Estevez
+- Horacio Gutierrez 
 
 ## Contacto
 

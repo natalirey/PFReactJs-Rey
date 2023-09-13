@@ -1,3 +1,4 @@
+import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
@@ -30,19 +31,19 @@ const ItemDetail = ({
   };
 
   return (
-    <article className="flex justify-center items-center w-full gap-30">
-      <img src={imagen} alt={nombre} className="w-35" />
-      <section className="w-30 mt-50">
-        <h1 className="font-bold text-xl">{nombre}</h1>
+    <article className="flex justify-center items-center gap-35">
+      <img src={imagen} alt={nombre} className="ItemImg2" />
+      <section className="CardInfo">
+        <h1 className="font-bold ">{nombre}</h1>
         <p>{marca}</p>
         <br />
         <br />
         <p>{descripcion}</p>
         <br />
         <br />
-        <p className="font-bold m-5">U$D: {precio}</p>
+        <p className="font-bold ">U$D: {precio}</p>
         {value > 0 ? (
-          <div className="flex">
+          <div className="flex mt-5">
             <Link to="/cart" className="btnVerDetalle mr-4">
               Ir al carrito
             </Link>
